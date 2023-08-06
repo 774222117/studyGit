@@ -33,8 +33,10 @@
         // 上面的两步可以合并为一步！！！
         // !!!!或者git commit -a -m "提交说明"  (把文件提交到版本库)  !!!!提交到本地仓库
 
-        // 5.查看状态
+       // 5.查看状态
         // git log (查看提交日志) ！！！然后按Q退出
+        // git log --pretty=oneline (查看提交日志) ！！！然后按Q退出 更简洁的查看
+        // git log --pretty=oneline --graph (查看提交日志) ！！！然后按Q退出 更简洁的查看  带图形的 (多分支的时候可以看到分支合并图)
 
         // 6.克隆项目
         // git clone 项目地址 (注意克隆的路径)
@@ -46,6 +48,11 @@
         // 8.   .gitignore文件
         // 里面的内容是不需要提交到版本库的文件，比如node_modules文件夹，可以在里面写node_modules/，这样就不会提交到版本库了
         // 一般不需要自己手动配置，脚手架自带
+
+        // 9.版本回退
+        // git reset --hard HEAD^  回退到上一个版本
+        // git reset --hard HEAD^^  回退到上上个版本
+        // git reset --hard HEAD~100  回退到上100个版本
     </script>
 </body>
 </html>
